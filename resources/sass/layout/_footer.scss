@@ -1,0 +1,83 @@
+.footer {
+    background: $color-grey-bg;
+    width: 100%;
+    padding: 30px 20px 0px 20px;
+
+
+    &__logo {
+        width: 16.5rem;
+    
+        &-container {
+            position: relative;
+            padding: 0 $l-size;
+        }
+    }
+
+    &__brands {
+        margin-right: $xl-size;
+
+        & a {
+            color: $color-grey-icons;
+            padding: $m-size;
+
+            @include respond(phone) {
+               padding: 0;
+            }
+            
+            &:hover {
+                text-decoration: none;
+                color: $color-white;
+                cursor: pointer;
+            }
+    
+            & svg {
+                margin: 2rem $s-size/2 2rem $s-size/2;
+            }
+        }
+    }
+
+    &__extras {
+        padding: $l-size;
+        color: $color-white;
+        line-height: 2;
+        font-size: $s-size;
+        border-top: 2px solid $color-black;
+
+        &-title {
+            font-weight: 700;
+            font-size: $m-size;
+            margin-bottom: $m-size;
+            padding-left: 0;
+            
+            &::before {
+                content : "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 1px;
+                width: 12.5%;
+                border-bottom: 2px solid $color-primary;
+            }
+
+            &::after {
+                content : "";
+                position: absolute;
+                left: 0;
+                bottom: -5;
+                height: 1px;
+                width: 25%;
+                border-bottom: 2px solid $color-primary;
+            }
+        }
+    }
+
+    &__copyright {
+        background: $color-grey-bg-2;
+        color: $color-white;
+        padding-left: $l-size;
+
+        &-brand {
+            @include fontbold;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "frontend_challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass resources/sass/main.scss resources/css/main.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miguelrko/Frontend_challenge.git"
+  },
+  "author": "miguelrko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miguelrko/Frontend_challenge/issues"
+  },
+  "homepage": "https://github.com/miguelrko/Frontend_challenge#readme",
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  }
+}

@@ -1,0 +1,220 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="image/png" rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="resources/css/main.css">
+    <script defer src="vendors/js/fontawesome-all.min.js"></script>
+    <title>Servicios para el Hogar</title>
+    <meta name="description" content="Contrata servicios para tu hogar de manera simple, rápida y segura">
+</head>
+<body>
+
+    <nav class="navigation navbar navbar-default">
+            <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-navbar" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <h1 class="pull-left navigation__logo-container">
+                        <img class="navigation__logo img-responsive"src="resources/img/iguanafix_logo.svg" alt="iguanafix logo">
+                </h1>
+                
+              </div>
+          
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="collapse-navbar">
+                <span class="navigation__tel">
+                    <i class="fas fa-phone"></i>
+                    0810-220-6173
+                </span>
+                <ul class="pull-right navigation__links">
+                    <li><a href="#">Casa</a></li>
+                    <li><a href="#">Auto</a></li>
+                    <li><a href="#">Empresas</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <a id="dLabel" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                Ingresar
+                            </a>
+                            <i class="fas fa-user"></i>
+                            <span class="caret"></span>
+                            <ul class="dropdown-menu" aria-labelledby="dLabel">
+                            <li>
+                                    <form action="">
+                                        <div class="form-group">
+                                          <label for="email">Usuario:</label>
+                                          <input type="email" class="form-control" id="email">
+                                        </div>
+                                        <div class="form-group">
+                                          <label for="pwd">Contraseña:</label>
+                                          <input type="password" class="form-control" id="pwd">
+                                        </div>
+                                        <div class="checkbox">
+                                          <label><input class="u-reset-position" type="checkbox"> Recordarme</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-default btn-custom-secondary">Iniciar</button>
+                                      </form>
+                            </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+              </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+          </nav>
+
+   <section class="product">
+       <span class="product__title">CONTRATAR UN SERVICIO > INSTALACIÓN DE AIRE ACONDICIONADO</span>
+
+       <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-7 product__gallery">
+
+                </div>
+                <div class="col-sm-5 product__description">
+                        <h3>Instalación de aire
+                            acondicionado split.
+                        </h3>
+
+                        <h5 id="product-select__price">
+                            $
+                        </h5>
+                        <select onchange="updateProduct()" id="product-select" class="form-control">
+                        </select>
+
+                        <input onchange="updatePrice()" id="product-number" type="number">
+                </div>
+            </div>
+        </div>
+
+   </section>
+
+   <section class="description">
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active"><a href="#details" aria-controls="home" role="tab" data-toggle="tab">Detalles del servicio</a></li>
+          <li role="presentation"><a href="#notincluded" aria-controls="profile" role="tab" data-toggle="tab">Qué no incluye</a></li>
+        </ul>
+          
+        
+        <div class="tab-content">
+           <div role="tabpanel" class="tab-pane active" id="details">
+               <p>
+                Colocación del nuevo equipo: unidad interio (hasta 2,5 mts de altura, incluido el taparroyos) y exterior
+                (en lugares accesibles, hasta 2,5 mts de altura). Colocación de drenaje. Presurización, vacio y control
+               de carga. Ménsulas estándar. Cañeria de interconexión hasta 3 mts (3mts de caño de cobre 1/2 o 1/4,
+               3 mts de cable tipo taller - 5 1/2, 3 mts de manguera de desagüe para drenaje, cinta PVC, Kit de
+               tornillos y/o caños equivalentes según el equipo). Prueba del equipo. Limpieza del lugar.
+               </p>
+               <p>
+                    Colocación del nuevo equipo: unidad interio (hasta 2,5 mts de altura, incluido el taparroyos) y exterior
+                    (en lugares accesibles, hasta 2,5 mts de altura). Colocación de drenaje. Presurización, vacio y control
+                   de carga. Ménsulas estándar. Cañeria de interconexión hasta 3 mts (3mts de caño de cobre 1/2 o 1/4,
+                   3 mts de cable tipo taller - 5 1/2, 3 mts de manguera de desagüe para drenaje, cinta PVC, Kit de
+                   tornillos y/o caños equivalentes según el equipo). Prueba del equipo. Limpieza del lugar.
+               </p>
+           </div>
+          <div role="tabpanel" class="tab-pane" id="notincluded">
+                <p>
+                        Colocación del nuevo equipo: unidad interio (hasta 2,5 mts de altura, incluido el taparroyos) y exterior
+                        (en lugares accesibles, hasta 2,5 mts de altura). Colocación de drenaje. Presurización, vacio y control
+                       de carga. Ménsulas estándar. Cañeria de interconexión hasta 3 mts (3mts de caño de cobre 1/2 o 1/4,
+                       3 mts de cable tipo taller - 5 1/2, 3 mts de manguera de desagüe para drenaje, cinta PVC, Kit de
+                       tornillos y/o caños equivalentes según el equipo). Prueba del equipo. Limpieza del lugar.
+                       </p>
+                       <p>
+                            Colocación del nuevo equipo: unidad interio (hasta 2,5 mts de altura, incluido el taparroyos) y exterior
+                            (en lugares accesibles, hasta 2,5 mts de altura). Colocación de drenaje. Presurización, vacio y control
+                           de carga. Ménsulas estándar. Cañeria de interconexión hasta 3 mts (3mts de caño de cobre 1/2 o 1/4,
+                           3 mts de cable tipo taller - 5 1/2, 3 mts de manguera de desagüe para drenaje, cinta PVC, Kit de
+                           tornillos y/o caños equivalentes según el equipo). Prueba del equipo. Limpieza del lugar.
+                       </p>
+          </div>
+        </div>
+ 
+    </section>
+   <footer class="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <h1 class="pull-left footer__logo-container">
+                <img class="footer__logo img-responsive"src="resources/img/iguanafix_logo.svg" alt="iguanafix logo">
+            </h1>
+            <span class="pull-right footer__brands">
+                <a>
+                    <i class="fab fa-facebook-f fa-lg"></i>
+                </a>
+                <a>
+                    <i class="fab fa-instagram fa-lg"></i>
+                </a>
+                <a>
+                    <i class="fab fa-google-plus-g fa-lg"></i> 
+                </a>
+                <a>
+                    <i class="fab fa-youtube fa-lg"></i>
+                </a>
+                <a>
+                    <i class="fab fa-twitter fa-lg"></i>
+                </a>
+                <a>
+                    <i class="fas fa-envelope fa-lg"></i> 
+                </a>
+            </span>
+        </div>
+        <div class="row footer__extras">
+                <div class="col-sm-12 footer__extras-title">Casa</div>
+
+                <div class="col-xs-6 col-sm-3">Albañileria</div>
+                <div class="col-xs-6 col-sm-3">Albañileria</div>
+                <div class="col-xs-6 col-sm-3">Albañileria</div>
+                <div class="col-xs-6 col-sm-3">Albañileria</div>
+
+                <div class="col-xs-6 col-sm-3">Albañileria</div>
+                <div class="col-xs-6 col-sm-3">Albañileria</div>
+                <div class="col-xs-6 col-sm-3">Albañileria</div>
+                <div class="col-xs-6 col-sm-3">Albañileria</div>
+
+                <div class="col-xs-6 col-sm-3">Albañileria</div>
+                <div class="col-xs-6 col-sm-3">Albañileria</div>
+                <div class="col-xs-6 col-sm-3">Albañileria</div>
+                <div class="col-xs-6 col-sm-3">Albañileria</div>
+
+                <div class="col-sm-12 footer__extras-title">Auto</div>
+
+                <div class="col-xs-6 col-sm-3">Albañileria</div>
+                <div class="col-xs-6 col-sm-3">Albañileria</div>
+                <div class="col-xs-6 col-sm-3">Albañileria</div>
+                <div class="col-xs-6 col-sm-3">Albañileria</div>
+
+                <div class="col-xs-6 col-sm-3">Albañileria</div>
+                <div class="col-xs-6 col-sm-3">Albañileria</div>
+                <div class="col-xs-6 col-sm-3">Albañileria</div>
+                <div class="col-xs-6 col-sm-3">Albañileria</div>
+
+                <div class="col-xs-6 col-sm-3">Albañileria</div>
+                <div class="col-xs-6 col-sm-3">Albañileria</div>
+                <div class="col-xs-6 col-sm-3">Albañileria</div>
+                <div class="col-xs-6 col-sm-3">Albañileria</div>
+        </div>
+        <div class="row footer__copyright">
+            <h6 class="pull-left">© Copyright 2016. All rights reserved | <span class="footer__copyright-brand">IguanaFix</span></h6>
+            <ul class="pull-right list-inline">
+                <li><a href="#"><img src="https://static.iguanafix.com/static/v2/images/home/badge-google-play_es.svg?v=141.P" class="img-responsive u-min-size" alt="Play Store"></a></li>
+                <li><a href="#"><img src="https://static.iguanafix.com/static/v2/images/home/badge-app-store_es.svg?v=141.P" class="img-responsive u-min-size" alt="App Store"></a></li>
+            </ul>
+        </div>
+    </div>
+   </footer>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+   <script src="resources/js/main.js"></script>
+
+</body>
+</html>
