@@ -1,0 +1,42 @@
+.gallery__img {
+    &-thumbnail {
+        width: 20%;
+        float: left;
+        display: flex;
+        flex-direction: column;
+
+        @include respond(m-phone){
+            width: 100%;
+            flex-direction: row
+        }
+
+        & input {
+         margin: $s-size $l-size;
+
+         @include respond(m-phone) {
+            margin: 10px 2%;
+            width: 30%;
+            height: 10%;
+        }
+        }
+    }
+
+    &-main {
+        width: 80%;
+        float: right;
+
+        @include respond(m-phone){
+            width: 100%;
+        }
+
+        @include clearfix();
+
+        & img {
+            min-height: 500px;
+
+            @include respond(m-phone) {
+                min-height: 300px;
+            }
+        }
+    }
+}

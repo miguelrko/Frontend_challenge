@@ -1,8 +1,115 @@
 .product {
-    padding: $xl-size;
+    padding: $xl-size $xl-size 0 $xl-size;
     color: $color-grey-text;
 
+    
     &__title {
         font-size: $s-size;
+        margin-bottom: $m-size;
+        display: block;
+    }
+
+    &__description {
+
+        @include clearfix();
+
+        animation: moveInRight 2s ease-in-out forwards;
+
+        & h3{
+            color: $color-grey-titles;
+            font-weight: bold; 
+        }
+
+        & span {
+            font-weight: 500;
+            margin: $m-size*1.5 0 $xl-size $s-size;
+        }
+    } 
+
+    &__gallery {
+        white-space: nowrap;
+
+        @include clearfix();
+
+        animation: moveInLeft 2s ease-in-out forwards;
+
+        @include respond(m-phone){
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
+
+    &__price {
+        color: $color-secondary;
+        font-weight: bold;
+        font-size: $l-size;
+        margin: $l-size 0 $m-size 0;
+    }
+
+    &__category {
+        color: $color-grey-titles;
+        font-weight: 500;
+    }
+
+    &__selection {
+        font-weight: 500;
+    }
+
+    &__quantity {
+        margin: $m-size 0 $xl-size 0;
+        text-align: center;
+        width: 15%;
+        border: 1px solid $color-grey-light-2;
+    }
+
+    &__included {
+        margin-top: $l-size;
+        color: $color-grey-titles;
+        font-weight: bold;
+
+        &-sub {
+            color: $color-primary;
+            font-weight: 100;
+
+            &:last-of-type {
+                padding-bottom: $s-size/2;
+                border-bottom: 1px solid darken($color-grey-light-1, 10%);
+            }
+        }
+    }
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.quantity-btn {
+
+    display: flex;
+
+    & button {
+        width: 12%;
+        padding: 2%;
+        margin: $m-size 0 $xl-size 0;
+        background: lighten($color-grey-icons, 35%);
+        font-weight: 500;
+    }
+}
+
+.btn-custom-secondary-inv {
+    color: $color-white;
+    border-color: $color-white;
+    background: $color-secondary;
+    font-size: $s-size;
+    padding: $s-size $xl-size/2;
+    margin: $s-size 0 $s-size 0;
+
+    &:hover, &:active, &:focus {
+        color: $color-secondary;
+        background: $color-white;
+        border: 2px solid $color-secondary;
     }
 }

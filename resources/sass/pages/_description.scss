@@ -2,6 +2,8 @@
     padding: $xl-size;
     color: $color-grey-text;
 
+    animation: moveInBottom 2s ease-in-out forwards;
+
     & ul {
         display: flex;
         justify-content: center;
@@ -34,6 +36,77 @@
 
         @include respond(phone) {
             padding: 0 $s-size;
+        }
+    }
+
+    &__related-product {
+        padding: 0 12rem;
+        margin-top: $xl-size;
+        
+
+        @include respond(phone) {
+            padding: 0 1.2rem;
+        }
+
+        & .container-fluid {
+            padding: 0;
+        }
+    }
+
+    &__related {
+
+        border: 2px solid $color-grey-light-1;
+        padding: 0px;
+        margin: 0px 25px 10px 25px;
+        min-height: 300px;
+
+        @include clearfix;
+
+        @include respond(tab-port) {
+            margin: 0px 18px 10px 18px;
+        }
+
+        @include respond(phone-land) {
+            min-height: 340px;
+        }
+
+        &-img {
+            width: 100%;
+            height: auto;
+        }
+
+        &-title {
+            padding-left: $s-size/2;
+        }
+
+        &-price {
+            color: $color-secondary;
+            font-weight: 100;
+            padding-left: $s-size/2;
+        }
+
+        &-description {
+            font-weight: 100;
+            font-size: $s-size;
+            padding-left: $s-size/2;
+        }
+
+        &-btn {
+            color: $color-secondary;
+            background: $color-white;
+            border: 2px solid $color-secondary;
+            font-size: $s-size/1.5;
+            padding: $s-size/2 $xl-size/2;
+            margin: $s-size 0 $s-size/2 0;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+
+            &:hover, &:active {
+                color: $color-white;
+                border-color: $color-white;
+                background: $color-secondary;
+            }
         }
     }
 }

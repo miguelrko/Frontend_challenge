@@ -76,21 +76,40 @@
 
        <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-7 product__gallery">
+                <div class="col-sm-8 product__gallery">
+                   <div id="gallery-thumbnail" class="gallery__img-thumbnail">
 
+                   </div>
+                   <div id="gallery-main" class="gallery__img-main">
+
+                   </div>
                 </div>
-                <div class="col-sm-5 product__description">
+                <div class="col-sm-4 product__description">
                         <h3>Instalación de aire
                             acondicionado split.
                         </h3>
 
-                        <h5 id="product-select__price">
+                        <h5 id="product-select__price" class="product__price">
                             $
                         </h5>
-                        <select onchange="updateProduct()" id="product-select" class="form-control">
+                        <p class="product__category">Frigorías</p>
+                        <select onchange="updateProduct()" id="product-select" class="form-control product__selection">
                         </select>
 
-                        <input onchange="updatePrice()" id="product-number" type="number">
+                        <div class="quantity-btn">
+                                <button onclick="quantityDown()">-</button>
+                                <input id="product-number" type="number" class="product__quantity">
+                                <button onclick="quantityUp()">+</button>
+                                <span> unidades.</span>
+                        </div>
+
+                        <button type="submit" class="btn btn-default btn-custom-secondary-inv">PROGRAMAR VISITA</button>
+
+                        <p class="product__included">Qué incluye</p>
+                        <h6 class="product__included-sub">Desinstalación del equipo anterior.</h6>
+                        <h6 class="product__included-sub">Colocación de nuevo equipo: unidad interior y exterior</h6>
+                        <h6 class="product__included-sub">Colocación de drenaje.</h6>                   
+                        
                 </div>
             </div>
         </div>
@@ -137,6 +156,14 @@
                            tornillos y/o caños equivalentes según el equipo). Prueba del equipo. Limpieza del lugar.
                        </p>
           </div>
+        </div>
+
+        <div id="related-product" class="description__related-product">
+            <div class="container-fluid">
+                <div class="row">
+                        
+                </div>
+            </div>
         </div>
  
     </section>
